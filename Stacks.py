@@ -29,3 +29,18 @@ for item in range(s.size()):
         # peek()        returns the top value of the stack
         # isEmpty()     checks if the stack is empty and returns True or False
         # size()        shows the Size of the stack
+
+#Function to reverse string chaacters based on stacking the elements and the useing the LIFO prinzipl
+
+def revstring(mystr):
+    rs = Stack()
+
+    for c in mystr:
+        rs.push(c)
+    
+    returningstring = ''
+    
+    while rs.size() != 0:
+        returningstring += rs.pop()
+
+    return returningstring
